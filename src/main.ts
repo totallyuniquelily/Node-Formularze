@@ -1,3 +1,4 @@
+// Autorzy: Paweł Nowiński, Kamila Rosik
 import express = require("express");
 
 import mysql = require("mysql");

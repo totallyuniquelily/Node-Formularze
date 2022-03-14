@@ -18,5 +18,6 @@
   "dependencies": {
     "express": "^4.17.3",
     "mysql": "^2.18.1"
-  }
+  },
+  "contributors": ["Paweł Nowiński", "Kamila Rosik"]
 }
