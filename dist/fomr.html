@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz</title>
+    <title>Restauracja</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -18,24 +18,26 @@
 </head>
 <body>
     <center>
-        <h1>Formularz</h1>
-        <table>
-            <tr>
-                <td>1 pole</td><td><input type="text" /></td>
-            </tr>
-            <tr>
-                <td>2 pole</td><td><input type="text" /></td>
-            </tr>
-            <tr>
-                <td>3 pole</td><td><input type="text" /></td>
-            </tr>
-            <tr>
-                <td>4 pole</td><td><input type="text" /></td>
-            </tr>
-            <tr>
-                <td colspan="2"><center><input type="submit" value="Prześlij" id="btn"/></center></td>
-            </tr>
-        </table>
+        <h1>Rezerwacja</h1>
+        <form action="/add" method="get">
+            <table>
+                <tr>
+                    <td>Nazwisko</td><td><input name="last_name" type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Numer Stolika</td><td><input name="table_number" type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Ilość Gości</td><td><input name="guests" type="number" /></td>
+                </tr>
+                <tr>
+                    <td>Numer Telefonu</td><td><input name="phone_number" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><input type="submit" value="Prześlij" id="btn"/></center></td>
+                </tr>
+            </table>
+        </form>
     </center>
 </body>
 </html>
